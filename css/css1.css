@@ -1,0 +1,426 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto:300&subset=cyrillic';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+@font-face {
+    font-family: Lora-Bold; 
+    src: local("Lora-Bold"),
+         url(css/font/Lora-Bold.ttf); 
+  }
+@font-face {
+    font-family: Lora-Regular; 
+    src: local("Lora-Regular"),
+         url(css/font/Lora-Regular.ttf); 
+  }
+.clearfix{
+    clear: both;
+}
+/* HEADER */
+header{
+    background-image: url(../images/header-BG.png);
+    background-color: rgba(59, 64, 76, 0.5);
+    background-repeat: no-repeat;
+    height: 700px;
+     background-size: cover;
+}
+header h2{
+  font-size: 58.333px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 7%;
+}
+nav{
+    height: 90px;    
+}
+nav #logo{
+    line-height: 115px;
+    display: block;
+}
+nav .menu{
+    list-style: none;
+}
+nav .menu:after{
+    content: "";
+	margin-left: 100%;
+}
+nav .menu li{ 
+    display: inline-block;
+    height: 60px;
+    line-height: 90px;
+}
+nav .menu li a{
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgba(255, 255, 255, 0.69);
+  line-height: 1.2;
+  text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;    
+    line-height: 50px; 
+}
+nav .menu li a:hover{
+    background: #516d87;
+}
+header p{
+    text-align: center;
+  font-size: 24px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+}
+header div a.get{
+    background-color: rgb(0, 165, 255);
+    box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    height: 72px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 35px;
+    line-height: 72px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 5%;
+}
+header div a.get:hover{
+    background: rgba(81, 109, 135, 0.5);
+}
+/* SERVICES */
+#portfolio h2, .services h2, #partnership h2, #saying h2{
+  font-size: 41.667px;
+  font-family: "Lora";
+  color: rgb(58, 63, 75);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.services h2:before, #portfolio h2:before, #partnership h2:before, #saying h2:before{
+  background-color: rgb(0, 165, 255);
+  content: "";
+  position: absolute;
+  width: 147px;
+  height: 4px;
+  left: 50%;
+  margin-left: -73px;
+  bottom: -10px;
+}
+.services .twelve{
+    margin: 70px 0;
+}
+.container.services .three{
+    text-align: center;
+    margin-left: 3%;
+}
+.container.services .three span.img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #f5f6f8;
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;    
+}
+.container.services .three.logo span.img:before{
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    background: url(/images/sprite.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -19px;
+    margin-left: -19px;
+}
+
+.container.services .webdes span.img:before{
+    content: "";
+    display: block;
+    width: 44px;
+    height: 36px;
+    background: url(/images/sprite.png) no-repeat -37px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -22px;
+}
+.container.services .branding span.img:before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 37px;
+    background: url(/images/sprite.png) no-repeat -82px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -12px;
+}
+.container.services .illust span.img:before{
+    content: "";
+    display: block;
+    width: 44px;
+    height: 50px;
+    background: url(/images/sprite.png) no-repeat -106px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -22px;
+}
+.container.services .three h3{
+    font-size: 14px;
+    font-weight: bolder;
+  font-family: "Source Sans Pro";
+  color: rgb(58, 63, 75);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.container.services .three h3:after{
+  content: "";
+  border: 1px solid rgb(106, 106, 106);
+  position: absolute;
+  left: 50%;
+  margin-left: -18px;
+    bottom: -10px;
+  width: 36px;
+}
+
+.container.services .three span{
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: rgb(153, 153, 153);
+  text-align: center;
+}
+/* PORTFOLIO */
+#portfolio{
+    background: #f5f6f8;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 860px;
+/*    text-align: center;*/
+}
+#portfolio .tab-nav{
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
+}
+#portfolio .tab-nav li{    
+    display: inline-block;
+    text-align: left;    
+    position: relative;
+}
+#portfolio .tab-nav .helper {
+                width: 100%;
+                height: 0;
+                visibility: hidden;
+}
+#portfolio .tab-nav a{
+  font-size: 14px;
+  color: rgb(58, 63, 75);
+  line-height: 1.2;
+  text-decoration: none;
+}
+#portfolio .tab-nav a.active{
+    color: rgb(0, 165, 255);
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: rgb(0, 165, 255);    
+}
+#portfolio .tab-content .item{
+  background-color: rgb(220, 220, 220);
+  width: 380px;
+  height: 350px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.55);
+  margin-bottom: 15px;
+  margin-left: 1%;
+  font-family: "Open Sans";
+  color: #999999;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  text-align: left;
+}
+#portfolio .tab-content .item h4{
+    padding-left: 35px;
+}
+#portfolio .tab-pane.active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#portfolio .tab-content .item a{
+    font-family: "Open Sans";
+  color: #999999;
+  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+    text-decoration: none;
+    
+}
+#portfolio .tab-content .item:hover{
+  box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.55);
+  transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+  animation-duration: 5s;
+}
+#portfolio .more{
+  display: block;
+  color: #fff;
+  background-color: #00a5ff;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  height: 63px;
+  border-radius: 35px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 63px;
+  font-family: "Open Sans";
+  font-size: 25px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+    text-decoration: none;
+    margin-top: 30px;
+} 
+#portfolio .more:hover{
+    background: rgba(81, 109, 135, 0.5);
+}
+/*PARTNERSIP*/
+#partnership{
+    padding-top: 100px;
+}
+#partnership ul{
+    text-align: justify;
+    margin: 100px auto;}
+#partnership ul li{    
+    display: inline-block;
+    text-align: left;    
+    position: relative;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+#partnership ul .helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+#partnership ul li:hover{
+    opacity: 1;
+}
+/*who what say*/
+#saying{
+    background: #f5f6f8;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 660px;
+}
+/*Contact us*/
+#ContactUs{
+    background: #3b404c;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+#ContactUs .columns{
+    margin-left: 0;
+    float: right;
+}
+#ContactUs h3{
+  font-size: 33.333px;
+  font-family: "Lora";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  display: inline-block;
+}
+#ContactUs ul{
+    text-align: right;
+  font-size: 21px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 2.064;
+}
+#ContactUs ul li{
+    display: inline-block;
+    margin-left: 2%;
+}
+#ContactUs h4{
+  font-size: 24px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+    padding-top: 40px;
+}
+#ContactUs p{
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(153, 153, 153);
+  line-height: 1.333;
+    }
+#ContactUs form{
+    padding-top: 40px;
+}
+#ContactUs form label{
+    width: 49%;
+}
+#ContactUs form label input{
+    width: 100%;
+    background: none;
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid red;
+}
+#ContactUs form label:first-of-type{
+    margin-right: 1%;
+}
+#ContactUs form label:last-of-type{
+    width: 100%;
+}
+#ContactUs form textarea{
+    width: 100%;
+    background: none;
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid red;
+    margin-top: 40px;
+    min-height: 38px;
+    resize: none;
+    word-wrap: normal;
+}
+#ContactUs form button{
+  background-color: rgb(0, 165, 255);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 0.92;
+  width: 280px;
+  height: 63px;
+    border-radius: 35px;
+    border: none;
+}
+#ContactUs form button:hover{
+  background: rgba(81, 109, 135, 0.5)
+}
+#ContactUs a.up{
+    position: absolute;
+    display: block;
+    background: url(/images/top.png);
+    bottom: 0;
+    left: 50%;
+    margin-left: -37px;
+}
+footer{
+    height: 90px;
+    line-height: 100px;
+}
+footer .social-but{float: right;}
+footer .social-but li{
+    display: inline-block;
+}
+
+
+
